@@ -1,5 +1,9 @@
 # Jenkins Lab
 
+### Antes de Ejecutar el docker Compose
+
+Antes de ejecutar el Docker-compose hay que modificarlo para incluir que haga uso del puerto del 3000 y añadir el volumen
+
 ## Ejecutar Docker Compose
 
 Para ejecutar Docker Compose, asegúrate de que tengas Docker Compose instalado en tu sistema. Luego, sigue estos pasos:
@@ -21,6 +25,8 @@ docker logs id_container
 ```bash
 docker exec id_container cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+
+
 4. Se Inicia sesion Con la contraseña obtenida en el paso anterior
 
 5. Posteriormente se instala el Plugin de node.js
@@ -41,3 +47,7 @@ docker exec id_container cat /var/jenkins_home/secrets/initialAdminPassword
 Con los siguientes comandos
 <img width="975" alt="Captura de pantalla 2024-04-24 a la(s) 2 17 18 p  m" src="https://github.com/Estebanm1812/jenkins-lab/assets/69942961/9834b354-40c3-49a5-b1d0-671ca6f8492d">
 12. Guardar los cambios
+13. Construir la automatizacion
+<img width="975" alt="Captura de pantalla 2024-04-24 a la(s) 6 08 06 p  m" src="https://github.com/Estebanm1812/jenkins-lab/assets/69942961/4d08443c-0aa6-49eb-8dfc-1fc5c20cfbdc">
+14. Entrar al enlace que nos da (Localhost:3000)
+<img width="439" alt="Captura de pantalla 2024-04-24 a la(s) 6 09 05 p  m" src="https://github.com/Estebanm1812/jenkins-lab/assets/69942961/c2a47eb6-b56b-4b17-8cd3-b5bef6fe3194">
